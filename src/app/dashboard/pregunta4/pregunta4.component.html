@@ -3,15 +3,17 @@
 <h2>Calculadora de Precio de Compra</h2>
 
 <div class="form">
-    <mat-form-field>
-        <mat-label>Precio Unitario por Artículo</mat-label>
-        <input matInput type="number" [(ngModel)]="precioUnitario" min="0">
-    </mat-form-field>
-
-    <mat-form-field>
-        <mat-label>Cantidad de Artículos</mat-label>
-        <input matInput type="number" [(ngModel)]="cantidad" min="0">
-    </mat-form-field>
+    <div class="container">
+        <mat-form-field>
+            <mat-label>Precio Unitario por Artículo</mat-label>
+            <input matInput type="number" [(ngModel)]="precioUnitario" min="0">
+        </mat-form-field>
+    
+        <mat-form-field>
+            <mat-label>Cantidad de Artículos</mat-label>
+            <input matInput type="number" [(ngModel)]="cantidad" min="0">
+        </mat-form-field>
+    </div>
 
     <button mat-raised-button (click)="calcularPrecio()">Calcular Precio a Pagar</button>
 </div>

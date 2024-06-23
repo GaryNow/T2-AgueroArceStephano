@@ -21,19 +21,17 @@ export class DashboardComponent {
     this.router.navigateByUrl('/login');
   }
 
-  irHome(): void {
+
+
+  pregunta2(): void {
     this.router.navigate(["pregunta2"], {relativeTo: this.route})
   }
 
-  irCurso(): void {
+  pregunta3(): void {
     this.router.navigate(["pregunta3"], {relativeTo: this.route})
   }
 
-  irEstado(): void {
-    this.router.navigate(["pregunta4"], {relativeTo: this.route})
-  }
-
-  irPost(): void {
+  pregunta4(): void {
     this.router.navigate(["pregunta4"], {relativeTo: this.route})
   }
 
