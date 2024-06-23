@@ -1,0 +1,17 @@
+/* pregunta2.component.css */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+.resultado {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+p{
+    text-align: center;
+}

@@ -1,1 +1,23 @@
-<p>pregunta2 works!</p>
+<!-- pregunta2.component.html -->
+
+<p>Calculadora de Costo de Estacionamiento</p>
+
+<div class="form">
+    <mat-form-field>
+        <mat-label>Horas</mat-label>
+        <input matInput type="number" [(ngModel)]="horas" min="0">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Minutos</mat-label>
+        <input matInput type="number" [(ngModel)]="minutos" min="0" max="59">
+    </mat-form-field>
+
+    <button mat-raised-button (click)="calcularCosto()">Calcular Costo</button>
+</div>
+
+@if(costo > 0){
+    <div class="resultado">
+        <p>El costo total del estacionamiento es: ${{ costo }}</p>
+    </div>
+}
