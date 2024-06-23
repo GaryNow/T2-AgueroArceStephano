@@ -1,1 +1,29 @@
-<p>pregunta3 works!</p>
+<h2>Calculadora de Promedio de Notas</h2>
+
+<div class="form">
+    <mat-form-field>
+        <mat-label>Nota 1</mat-label>
+        <input matInput type="number" [(ngModel)]="nota1" min="0" max="100">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Nota 2</mat-label>
+        <input matInput type="number" [(ngModel)]="nota2" min="0" max="100">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Nota 3</mat-label>
+        <input matInput type="number" [(ngModel)]="nota3" min="0" max="100">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Nota 4</mat-label>
+        <input matInput type="number" [(ngModel)]="nota4" min="0" max="100">
+    </mat-form-field>
+
+    <button mat-raised-button (click)="calcularPromedio()">Calcular Promedio</button>
+</div>
+
+<div *ngIf="promedio !== null" class="resultado">
+    <p>El promedio de las tres notas más altas es: {{ promedio }}</p>
+</div>

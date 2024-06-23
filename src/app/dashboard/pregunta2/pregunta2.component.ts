@@ -18,8 +18,9 @@ export class Pregunta2Component {
   costo: number = 0;
 
   calcularCosto(): void {
+    // Convertir horas y minutos a minutos totales
     const minutosTotales = this.horas * 60 + this.minutos;
 
-    this.costo = Math.ceil(minutosTotales / 60) * 1500;
+    this.costo = Math.ceil(minutosTotales / 60) * 1500; // Cobran $1500 por hora o fracción
   }
 }
