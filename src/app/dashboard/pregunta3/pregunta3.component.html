@@ -24,6 +24,8 @@
     <button mat-raised-button (click)="calcularPromedio()">Calcular Promedio</button>
 </div>
 
-<div *ngIf="promedio !== null" class="resultado">
-    <p>El promedio de las tres notas más altas es: {{ promedio }}</p>
-</div>
+@if(promedio !== null){
+    <div class="resultado">
+        <p>El promedio de las tres notas más altas es: {{ promedio }}</p>
+    </div>
+}

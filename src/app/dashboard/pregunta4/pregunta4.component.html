@@ -8,7 +8,7 @@
             <mat-label>Precio Unitario por Artículo</mat-label>
             <input matInput type="number" [(ngModel)]="precioUnitario" min="0">
         </mat-form-field>
-    
+
         <mat-form-field>
             <mat-label>Cantidad de Artículos</mat-label>
             <input matInput type="number" [(ngModel)]="cantidad" min="0">
@@ -18,6 +18,8 @@
     <button mat-raised-button (click)="calcularPrecio()">Calcular Precio a Pagar</button>
 </div>
 
-<div *ngIf="precioFinal !== null" class="resultado">
+@if(precioFinal !== null){
+<div class="resultado">
     <p>El precio a pagar es: ${{ precioFinal }}</p>
 </div>
+}
