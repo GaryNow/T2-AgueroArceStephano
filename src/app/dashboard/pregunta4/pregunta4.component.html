@@ -1,1 +1,21 @@
-<p>pregunta4 works!</p>
+<!-- precio-component.component.html -->
+
+<h2>Calculadora de Precio de Compra</h2>
+
+<div class="form">
+    <mat-form-field>
+        <mat-label>Precio Unitario por Artículo</mat-label>
+        <input matInput type="number" [(ngModel)]="precioUnitario" min="0">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Cantidad de Artículos</mat-label>
+        <input matInput type="number" [(ngModel)]="cantidad" min="0">
+    </mat-form-field>
+
+    <button mat-raised-button (click)="calcularPrecio()">Calcular Precio a Pagar</button>
+</div>
+
+<div *ngIf="precioFinal !== null" class="resultado">
+    <p>El precio a pagar es: ${{ precioFinal }}</p>
+</div>

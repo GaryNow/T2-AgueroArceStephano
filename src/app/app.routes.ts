@@ -13,10 +13,10 @@ export const routes: Routes = [
         children: [
             {path: 'pregunta2', component: Pregunta2Component},
             {path: 'pregunta3', component: Pregunta3Component},
-            {path: 'pregunta3', component: Pregunta4Component}
+            {path: 'pregunta4', component: Pregunta4Component}
         ]
     },
     {path: "", redirectTo: "login", pathMatch: "full"}
    
     
-];
+]
